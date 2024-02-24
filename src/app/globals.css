@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    list-style-type: none;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="text"]::-ms-reveal,
+input[type="email"]::-ms-reveal {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+.hiddenscroll::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 14px;
+
+}
+
+::selection {
+    background-color: rgb(126 34 206);
+    color: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* required for aniscan color changes */
+.guZdik,
+.dtlKip {
+    border: dashed 2px white !important;
+}
+
+.guZdik svg,
+.dtlKip svg {
+    display: none;
+}
